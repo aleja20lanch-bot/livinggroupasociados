@@ -32,7 +32,7 @@ h1, h2, h3 {
     justify-content: space-between;
     align-items: center;
     padding: 10px 8%;
-    background: rgba(4, 18, 25, 0.98);
+    background: rgba(56, 93, 111, 0.98);
     position: fixed;
     width: 100%;
     top: 0;
@@ -188,4 +188,5 @@ h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 40px; }
 
     .hero { height: auto; padding-top: 150px; }
     .btn-primary, .btn-secondary { width: 100%; }
+
 }
