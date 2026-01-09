@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living Group Asociados | Bufete de Abogados</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="#inicio">
+                <img src="https://my.infinitycards.io/uploads/vcards/profiles/5761/dcf6b1ef-3eac-4f53-97e7-ae627206a4d6.JPG" alt="Living Group Logo" class="logo-img">
+            </a>
+        </div>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">El Bufete</a></li>
+            <li><a href="#servicios">Especialidades</a></li>
+            <li><a href="#contacto" class="btn-contact">Consulta Gratuita</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Excelencia Jurídica y Compromiso Humano</h1>
+            <div class="hero-text-wrapper">
+                <p>En <strong>Living Group Asociados</strong>, prestamos un servicio especializado y diferenciado que atiende de manera oportuna y profesional las necesidades de consultoría técnico-jurídica de nuestros clientes.</p>
+            </div>
+            <div class="hero-btns">
+                <a href="#servicios" class="btn-primary">Ver Servicios</a>
+                <a href="#contacto" class="btn-secondary">Contáctenos</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="practice-areas">
+        <div class="container">
+            <span class="subtitle">Nuestras Especialidades</span>
+            <h2>Áreas de Práctica</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon-line"></div>
+                    <h3>Derecho Civil</h3>
+                    <p>Recuperación de cartera, estudio de títulos, restitución de inmuebles, contratos y procesos de responsabilidad civil.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-line"></div>
+                    <h3>Derecho Penal</h3>
+                    <p>Defensa técnica en imputación, acusación, juicio oral, reparación integral y preacuerdos con fiscalía.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-line"></div>
+                    <h3>Defensa Administrativa</h3>
+                    <p>Procesos de reparación directa, nulidades, restablecimiento del derecho y actuaciones ante el Estado.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-line"></div>
+                    <h3>Derecho Comercial</h3>
+                    <p>Constitución de sociedades, liquidaciones, procesos de insolvencia y negociaciones mercantiles estratégicas.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-line"></div>
+                    <h3>Derecho Familia</h3>
+                    <p>Divorcios, custodia, alimentos, unión marital de hecho y liquidación de sociedades conyugales.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-line"></div>
+                    <h3>Laboral y Seguridad Social</h3>
+                    <p>Asesoría en procesos de nulidad, restablecimiento de derechos laborales y gestiones administrativas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Living Group Asociados. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
