@@ -86,7 +86,8 @@ h1, h2, h3 {
 .hero {
     min-height: 80vh;
     background: linear-gradient(rgba(4, 18, 25, 0.7), rgba(4, 18, 25, 0.8)), 
-                url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1350&q=80') center/cover;
+                url('linear-gradient(rgba(4, 18, 25, 0.7), rgba(4, 18, 25, 0.7)), 
+                url('https://my.infinitycards.io/uploads/vcards/covers/5759/PORTADA.png') center/cover') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -178,3 +179,4 @@ h1, h2, h3 {
     #check:checked ~ .checkbtn span:nth-child(2) { opacity: 0; }
     #check:checked ~ .checkbtn span:nth-child(3) { transform: rotate(-45deg) translate(5px, -7px); }
 }
+
