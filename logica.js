@@ -1,32 +1,26 @@
-// Validación simple del formulario y efecto de envío
-document.getElementById('law-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Simulación de envío
-    const btn = this.querySelector('button');
-    const originalText = btn.innerText;
-    
-    btn.innerText = "Enviando...";
-    btn.style.opacity = "0.7";
-    btn.disabled = true;
-
-    setTimeout(() => {
-        alert("Gracias por contactar a Lex & Co. Un abogado se pondrá en contacto con usted en las próximas 24 horas.");
-        btn.innerText = originalText;
-        btn.style.opacity = "1";
-        btn.disabled = false;
-        this.reset();
-    }, 2000);
+// Efecto de scroll suave para los enlaces
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+            // Cerrar menú móvil al hacer click
+            document.getElementById('check').checked = false;
+        }
+    });
 });
 
-// Cambio de color del Navbar al hacer scroll
+// Cambio de color en la navbar al hacer scroll
 window.addEventListener('scroll', () => {
-    const nav = document.querySelector('.navbar');
+    const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
-        nav.style.background = '#050c16';
-        nav.style.padding = '1rem 10%';
+        navbar.style.background = 'rgba(4, 18, 25, 0.98)';
+        navbar.style.padding = '10px 8%';
     } else {
-        nav.style.background = '#0a192f';
-        nav.style.padding = '1.5rem 10%';
+        navbar.style.background = 'rgba(4, 18, 25, 0.95)';
+        navbar.style.padding = '15px 8%';
     }
 });
