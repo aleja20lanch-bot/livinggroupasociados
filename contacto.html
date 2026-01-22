@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Living Group Asociados | Bufete de Abogados</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=PT+Sans:wght@400;700&family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylos.css">
+
+    <script src="logica.js" defer></script>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+
+    <div class="logo-container">
+        <a href="index.html">
+            <img src="multimedia/logosinfondo.png" alt="Living Group Asociados">
+        </a>
+    </div>
+
+    <!-- WhatsApp flotante -->
+    <a href="https://wa.me/573124416547" 
+       class="whatsapp-float" 
+       target="_blank" 
+       aria-label="WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <input type="checkbox" id="check">
+
+    <label for="check" class="checkbtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#servicios">Servicios</a></li>
+        <li><a href="blog.html" class="btn-blog-nav">Blog</a></li>
+    </ul>
+
+</nav>
+
+<!-- ================= CONTACTO ================= -->
+<section id="contacto" class="contact-section">
+
+    <div class="container-contact">
+
+        <div class="contact-header">
+            <span class="subtitle">Contacto</span>
+            <h2>Inicie su Consultoría</h2>
+            <div class="icon-line-center"></div>
+        </div>
+
+        <div class="contact-grid">
+
+            <!-- INFO -->
+            <div class="contact-info">
+                <h3>Información de Contacto</h3>
+                <p class="contact-desc">
+                    Estamos listos para brindarle la asesoría técnico-jurídica que su caso requiere.
+                </p>
+
+                <div class="info-details">
+                    <div class="detail-box">
+                        <strong>Ubicación:</strong>
+                        <span>Bogotá, D.C. - Colombia</span>
+                    </div>
+                    <div class="detail-box">
+                        <strong>WhatsApp:</strong>
+                        <span>+57 300 000 0000</span>
+                    </div>
+                    <div class="detail-box">
+                        <strong>Correo Electrónico:</strong>
+                        <span>contacto@livinggroup.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FORMULARIO -->
+            <div class="contact-form-container">
+
+                <form id="contactForm" class="contact-form">
+
+                    <div class="input-group">
+                        <input type="text" name="nombre" placeholder="Nombre completo" required>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" name="email" placeholder="Correo electrónico" required>
+                    </div>
+
+                    <div class="input-group">
+                        <select name="area" required>
+                            <option value="" disabled selected>Área de interés</option>
+                            <option value="Derecho Civil">Derecho Civil</option>
+                            <option value="Derecho Penal">Derecho Penal</option>
+                            <option value="Defensa Administrativa">Defensa Administrativa</option>
+                            <option value="Derecho Comercial">Derecho Comercial</option>
+                            <option value="Derecho Familia">Derecho Familia</option>
+                            <option value="Accidentes de Tránsito">Accidentes de Tránsito</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <textarea name="mensaje" placeholder="Descripción breve de su caso" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-send">
+                        Enviar Solicitud
+                    </button>
+
+                    <p id="formMessage" style="display:none;"></p>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- IZQUIERDA -->
+        <div class="footer-left">
+            <h4>Síguenos</h4>
+
+            <div class="social-links">
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">LinkedIn</a>
+            </div>
+
+            <a href="blog.html" class="footer-blog">
+                Acceso al Blog
+            </a>
+        </div>
+
+        <!-- CENTRO -->
+        <div class="footer-center">
+            <a href="index.html">
+                <img src="multimedia/logosinfondo.png" 
+                     alt="Living Group Asociados" 
+                     class="footer-logo">
+            </a>
+
+            <ul class="footer-contact">
+                <li>📞 +57 300 000 0000</li>
+                <li>✉️ contacto@livinggroup.com</li>
+                <li>📍 Bogotá, Colombia</li>
+            </ul>
+        </div>
+
+        <!-- DERECHA -->
+        <div class="footer-right">
+            <iframe 
+                src="https://www.google.com/maps?q=Bogotá,Colombia&output=embed"
+                loading="lazy">
+            </iframe>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Living Group Asociados · Todos los derechos reservados
+    </div>
+
+</footer>
+
+</body>
+</html>
