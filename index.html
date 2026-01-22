@@ -1,98 +1,306 @@
 <!DOCTYPE html>
+
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Living Group Asociados | Bufete de Abogados</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Michroma&family=PT+Sans:wght@400;700&family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="stylos.css">
+
     <script src="logica.js" defer></script>
+
 </head>
+
 <body>
 
    <nav class="navbar">
+
         <div class="logo-container">
-            <a href="#inicio" class="logo-text">
-                <span class="living-sea">LIVING</span>
-                <span class="group-asociados">group asociados</span>
+    <a href="#inicio">
+        <img src="multimedia/logosinfondo.png" alt="Living Group Asociados">
+    </a>
+</div>
+
+        <input type="checkbox" id="check">
+
+        <label for="check" class="checkbtn">
+
+            <span></span>
+
+            <span></span>
+
+            <span></span>
+
+        </label>
+
+
+
+        <ul class="nav-links">
+
+            <li><a href="#servicios">Servicios</a></li>
+	    
+	    <li><a href="#equipo-trabajo">Equipo de trabajo</a></li>	
+	   
+	     <li><a href="#nuestros-clientes">Nuestros Clientes</a></li>	
+
+	    <li><a href="blog.html" class="btn-blog-nav">Blog</a></li>
+
+	    <li><a href="contacto.html" class="btn-contact-nav">Contacto</a></li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <section id="inicio" class="hero">
+
+        <div class="hero-content">
+
+            <h1>Excelencia Jurídica y Compromiso Humano</h1>
+
+            <div class="hero-text-wrapper">
+
+                <p>En <strong>Living Group Asociados</strong>, prestamos un servicio especializado y diferenciado que atiende de manera oportuna y profesional las necesidades de consultoría técnico-jurídica de nuestros clientes.</p>
+
+            </div>
+
+            <div class="hero-btns">
+
+                <a href="#contacto" class="btn-secondary">Contáctanos</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="servicios" class="practice-areas">
+
+           <div class="container"> 
+
+            <span class="subtitle">Nuestros Servicios</span>
+
+           <!--  <h2>Áreas de Práctica</h2> -->
+
+            
+
+            <div class="services-grid">
+
+                <div class="service-card">
+
+                    <div class="icon-line"></div>
+
+                    <h3>Derecho Civil</h3>
+
+                    <p>Recuperación de cartera, estudio de títulos, restitución de inmuebles y responsabilidad civil.</p>
+
+                </div>
+
+
+
+                <div class="service-card">
+
+                    <div class="icon-line"></div>
+
+                    <h3>Derecho Penal</h3>
+
+                    <p>Defensa técnica en imputación, acusación, juicio oral y reparación integral.</p>
+
+                </div>
+
+
+
+                <div class="service-card">
+
+                    <div class="icon-line"></div>
+
+                    <h3>Defensa Administrativa</h3>
+
+                    <p>Procesos de reparación directa, nulidades y actuaciones ante el Estado.</p>
+
+                </div>
+
+
+
+                <div class="service-card">
+
+                    <div class="icon-line"></div>
+
+                    <h3>Derecho Comercial</h3>
+
+                    <p>Constitución de sociedades, liquidaciones y procesos de insolvencia.</p>
+
+                </div>
+
+
+
+                <div class="service-card">
+
+                    <div class="icon-line"></div>
+
+                    <h3>Derecho Familia</h3>
+
+                    <p>Divorcios, custodia, alimentos y liquidación de sociedades conyugales.</p>
+
+                </div>
+
+
+
+                <div class="service-card">
+
+                    <div class="icon-line"></div>
+
+                    <h3>Accidentes de Tránsito</h3>
+
+                    <p>Asesoría en audiencias, reclamaciones ante SOAT y reconstrucción de accidentes.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+	<section id="cantidad-de-casos" class="stats-section">
+    <div class="stats-container">
+        <div class="stat-item">
+            <span id="counter" class="stat-number">300</span>
+            <p class="stat-text">Casos resueltos exitosamente</p>
+        </div>
+      <div class="stat-item">
+            <span id="counter" class="stat-number">50</span>
+            <p class="stat-text">Clientes</p>
+        </div>
+
+    </div>
+</section>
+<section id="equipo-trabajo" class="team-section">
+    <div class="container">
+        <span class="subtitle">Nuestro Equipo</span>
+        <h2>Profesionales a su servicio</h2>
+
+        <div class="team-grid">
+            <div class="team-card">
+                <img src="multimedia/personal/AndresGomez.jpeg" alt="Abogado 1">
+                <h3>Hamilton Andrés Gómez Bravo</h3>
+                <p>Gerente General</p>
+            </div>
+
+            <div class="team-card">
+                <img src="multimedia/personal/LuisHernandez.jpeg" alt="Abogada 2">
+                <h3>Luis Enrique Hernández Rincón</h3>
+                <p>Director Jurídico</p>
+            </div>
+
+            <div class="team-card">
+                <img src="multimedia/personal/JankaGomez.jpeg" alt="Abogado 3">
+                <h3>Jhan Karlo Gómez Bravo</h3>
+                <p>Director de Cobranzas</p>
+            </div>
+	   <div class="team-card">
+                <img src="multimedia/personal/ErikaAponte.jpeg" alt="Abogado 4">
+                <h3>Erika Aponte González</h3>
+                <p>Directora de Proyectos </p>
+            </div>
+		<div class="team-card">
+                <img src="multimedia/personal.jpg" alt="Abogado 5">
+                <h3>Ángela Martínez</h3>
+                <p>Asistente Judicial</p>
+            </div>
+        </div>
+    </div>
+<section id="nuestros-clientes" class="clients-section">
+    <span class="subtitle">Confían en nosotros</span>
+    <h2>Nuestros Clientes</h2>
+
+    <div class="clients-grid">
+        <div class="client-card">
+            <img src="multimedia/clientes/pulgas.jpeg" alt="Cliente 1">
+            <p>Asociación mercado de pulgas de San Alejo</p>
+        </div>
+
+        <div class="client-card">
+            <img src="multimedia/clientes/PROVITURIN.jpeg" alt="Cliente 2">
+            <p>PROVITURIN</p>
+        </div>
+
+        <div class="client-card">
+            <img src="multimedia/clientes/LlanoAlto3.jpg" alt="Cliente 3">
+            <p>Conjunto residencial Llano alto III</p>
+        </div>
+
+        <div class="client-card">
+            <img src="multimedia/clientes/clavel1.jpg" alt="Cliente 4">
+            <p>Conjunto residencial clavel I</p>
+        </div>
+    </div>
+</section>
+
+
+</section>
+<a href="https://wa.me/573124416547" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+
+
+    <footer class="footer">
+    <div class="footer-container">
+
+        <!-- COLUMNA IZQUIERDA -->
+        <div class="footer-left">
+            <h4>Síguenos</h4>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/1874hLphMZ/?mibextid=wwXIfr" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/living_group_asociados?igsh=czd4bnlwam8yMjk0" target="_blank">Instagram</a>
+            </div>
+
+            <a href="blog.html" class="footer-blog">
+                Acceso al Blog
             </a>
         </div>
 
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+        <!-- COLUMNA CENTRAL -->
+        <div class="footer-center">
+            <img src="multimedia/logosinfondo.png" alt="Living Group Asociados" class="footer-logo">
 
-        <ul class="nav-links">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#nosotros">Productos</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#contacto" class="btn-contact-nav">Contacto</a></li>
-        </ul>
-    </nav>
-
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>Excelencia Jurídica y Compromiso Humano</h1>
-            <div class="hero-text-wrapper">
-                <p>En <strong>Living Group Asociados</strong>, prestamos un servicio especializado y diferenciado que atiende de manera oportuna y profesional las necesidades de consultoría técnico-jurídica de nuestros clientes.</p>
-            </div>
-            <div class="hero-btns">
-                <a href="#contacto" class="btn-secondary">Contáctanos</a>
-            </div>
+            <ul class="footer-contact">
+                <li>📞 +57 300 000 0000</li>
+                <li>✉️ contacto@livinggroup.com</li>
+                <li>📍 Bogotá, Colombia</li>
+            </ul>
         </div>
-    </section>
 
-    <section id="servicios" class="practice-areas">
-        <div class="container"> 
-            <span class="subtitle">Nuestras Servicios</span>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="icon-line"></div>
-                    <h3>Derecho Civil</h3>
-                    <p>Recuperación de cartera. Estudio de títulos. Restitución de bien inmueble. Pertenencias. Contratos. Conciliaciones. Procesos ejecutivos. Procesos de rendición de cuentas. Demandas de responsabilidad civil contractual y extracontractual.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon-line"></div>
-                    <h3>Derecho Penal</h3>
-                    <p>Imputación. Acusación. Preparatoria. Juicio Oral. Reparación integral. Audiencia concentradas. Audiencias preliminares. Preacuerdos con fiscalía.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon-line"></div>
-                    <h3>Derecho Administrativo</h3>
-                    <p>Reparación directa. Nulidades. Restablecimiento del derecho. Actuaciones administrativas.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon-line"></div>
-                    <h3>Derecho Comercial</h3>
-                    <p>Constitución de sociedades. Contratos comerciales. Liquidación de sociedades. Procesos de insolvencia en persona natural no comerciante. Negociaciones.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon-line"></div>
-                    <h3>Derecho de Familia</h3>
-                    <p>Alimentos. Custodia. Unión marital de hecho. Divorcios. Liquidación de sociedad conyugal y patrimonial. Impugnación e investigación de la paternidad.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon-line"></div>
-                    <h3>Derecho Laboral y Seguridad Social</h3>
-                    <p>Acoso laboral. Despido sin justa causa. Despido indirecto. Contrato realidad. Perdida de capacidad laboral por accidente de trabajo. Pensiones. Sindicatos. Estabilidad laboral reforzada.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon-line"></div>
-                    <h3>Accidentes de Tránsito y Responsabilidad Civil</h3>
-                    <p>Asesorías y representación en audiencias de tránsito. Reclamaciones ante el SOAT. Reclamaciones directas ante aseguradoras. Asistencia técnica en reconstrucción de accidentes. Asesoría integral para suscripción de seguros.</p>
-                </div>
-            </div>
+        <!-- COLUMNA DERECHA -->
+        <div class="footer-right">
+            <iframe 
+                src="https://www.google.com/maps?q=Bogotá,Colombia&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
-    </section>
 
-    <footer style="text-align: center; padding: 40px; background: #041219; border-top: 1px solid #15a1b3;">
-        <p>&copy; 2026 Living Group Asociados. Todos los derechos reservados.</p>
-    </footer>
+    </div>
 
+    <div class="footer-bottom">
+        © 2026 Living Group Asociados · Todos los derechos reservados
+    </div>
+</footer>
 </body>
-</html>
 
+</html>
 
