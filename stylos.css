@@ -850,43 +850,74 @@ section {
 
 .team-section h2 {
     margin: 15px 0 50px;
+    text-align: center;
 }
 
+/* GRID RESPONSIVE */
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 40px;
 }
 
+/* TARJETA */
 .team-card {
     background: var(--teal-dark);
-    padding: 20px;
+    padding: 25px 20px;
     text-align: center;
-    border-radius: 4px;
-    transition: 0.3s;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.team-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+/* HOVER SOLO EN DESKTOP */
+@media (hover: hover) {
+    .team-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
 }
 
+/* IMAGEN */
 .team-card img {
-    width: 80%;
-    height: 160px;
+    width: 100%;
+    max-width: 220px;
+    aspect-ratio: 1 / 1;        /* 👈 mantiene proporción */
     object-fit: cover;
-    border-radius: 4px;
-    margin-bottom: 20px;
+    border-radius: 8px;
+    margin: 0 auto 20px;
+    display: block;
 }
 
+/* TEXTO */
 .team-card h3 {
-    margin-bottom: 5px;
+    margin-bottom: 6px;
+    font-size: 1.1rem;
 }
 
 .team-card p {
     color: var(--teal-accent);
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 📱 AJUSTES MOBILE */
+@media (max-width: 600px) {
+    .team-section {
+        padding: 60px 5%;
+    }
+
+    .team-card {
+        padding: 20px 15px;
+    }
+
+    .team-card img {
+        max-width: 180px;
+    }
+
+    .team-card h3 {
+        font-size: 1rem;
+    }
 }
 
 /* --- WHATSAPP FLOAT --- */
@@ -1100,6 +1131,7 @@ section {
 }
 
 grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+
 
 
 
