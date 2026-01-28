@@ -1,131 +1,253 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Living Group Asociados | Bufete de Abogados</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=PT+Sans:wght@400;700&family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-
+    <link
+        href="https://fonts.googleapis.com/css2?family=Michroma&family=PT+Sans:wght@400;700&family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="stylos.css">
-
-    <script src="logica.js" defer></script>
-
 </head>
+
 <body>
 
-   <nav class="navbar">
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar">
 
         <div class="logo-container">
-    <a href="index.html">
-        <img src="multimedia/logosinfondo.png" alt="Living Group Asociados">
-    </a>
-</div>
-
-
-
+            <a href="index.html">
+                <img src="multimedia/logosinfondo.png" alt="Living Group Asociados">
+            </a>
+        </div>
 
         <input type="checkbox" id="check">
 
         <label for="check" class="checkbtn">
-
             <span></span>
-
             <span></span>
-
             <span></span>
-
         </label>
-
-
 
         <ul class="nav-links">
 
-            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#servicios">Servicios</a></li>
+	    
+	    <li><a href="index.html#equipo-trabajo">Equipo de trabajo</a></li>	
+	   
+	     <li><a href="index.html#nuestros-clientes">Nuestros Clientes</a></li>	
 
-            <li><a href="index.html">Servicios</a></li>
+	    <li><a href="blog.html" class="nav-link">Blog</a></li>
 
-	    <li><a href="contacto.html" class="btn-contact-nav">Contacto</a></li>
+	    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+    </ul>
 
-        </ul>
+
 
     </nav>
 
-<section id="noticias" class="news-section">
-    <div class="container">
+    <!-- ================= CONTENIDO PRINCIPAL ================= -->
+    <main>
 
-        <!-- NOTICIA DESTACADA -->
-        <article id="featured-news" class="featured-news"></article>
+        <!-- HERO BLOG -->
+        <section class="blog-hero">
+            <div class="blog-hero-content">
 
-        <!-- LISTADO DE NOTICIAS -->
-        <div class="news-header">
-            <span class="subtitle">Actualidad Jurídica</span>
-            <h2>Publicaciones y Análisis</h2>
+                <div class="hero-text">
+                    <span class="blog-tag">Nuestro Blog</span>
+                    <h1>Derecho de forma sencilla</h1>
+                    <p>Análisis legales claros, actuales y aplicables.</p>
+
+                    <input type="search" id="blogSearch" placeholder="Buscar artículos...">
+                </div>
+
+                <div class="hero-image">
+                    <img src="multimedia/blog/legal.jpg" alt="Ilustración temática legal">
+                </div>
+
+            </div>
+        </section>
+	<section class="blog-gallery">
+    <div class="blog-gallery-container">
+
+        <div class="gallery-item">
+            <img src="multimedia/blog/galeria1.png" alt="Actividad jurídica">
         </div>
 
-        <div id="news-list" class="news-list"></div>
+        <div class="gallery-item">
+            <img src="multimedia/blog/galeria2.png" alt="Asesoría legal">
+        </div>
+
+        <div class="gallery-item">
+            <img src="multimedia/blog/galeria3.png" alt="Equipo legal">
+        </div>
+
+        <div class="gallery-item">
+            <img src="multimedia/blog/galeria4.png" alt="Audiencias">
+        </div>
 
     </div>
-
 </section>
-<a href="https://wa.me/573124416547" 
-   class="whatsapp-float" 
-   target="_blank" 
-   aria-label="WhatsApp">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-</a>
-</section>
- <footer class="footer">
-    <div class="footer-container">
 
-        <!-- COLUMNA IZQUIERDA -->
-        <div class="footer-left">
-            <h4>Síguenos</h4>
+        <!-- GRID BLOG -->
+        <section class="blog-grid-section">
+            <div class="blog-grid">
 
-            <div class="social-links">
-                <a href="#" target="_blank">Facebook</a>
-                <a href="#" target="_blank">Instagram</a>
-                <a href="#" target="_blank">LinkedIn</a>
+                <article class="blog-card" 
+			data-title="Este es el paos a paso para formar una empresa de forma legal"
+                    data-text="En este artículo explicamos detalladamente el proceso legal para constituir tu empresa en Colombia, desde la elección del tipo societario hasta el registro ante las entidades correspondientes."
+                    data-image="multimedia/blog/constitución.png">
+                    <img src="multimedia/blog/constitución.png" alt="Constitución de empresas">
+                    <h3>Tu empresa paso a paso</h3>
+                    <p>Guía práctica para constituir tu empresa sin errores legales.</p>
+                </article>
+
+
+                <article class="blog-card" 
+			data-title=""
+                    data-text="";
+                    data-image="">
+                    <img src="multimedia/blog/responsabilidadcivil.png" alt="Responsabilidad civil">
+                    <h3>Responsabilidad civil</h3>
+                    <p>Qué hacer ante daños, reclamaciones y demandas.</p>
+                </article>
+
+                <article class="blog-card" 
+		data-title=""
+                    data-text="";
+                    data-image="">
+                    <img src="multimedia/blog/contratoslaborales.png" alt="Contratos laborales">
+                    <h3>Contratos laborales</h3>
+                    <p>Cláusulas clave que debes revisar siempre.</p>
+                </article>
+
+                <article class="blog-card" 
+			data-title=""
+                    data-text="";
+                    data-image="">
+                    <img src="multimedia/blog/guialegal.png" alt="Guía legal para emprendedores">
+                    <h3>Guía para emprendedores</h3>
+                    <p>Aspectos legales básicos antes de iniciar tu negocio.</p>
+                </article>
+                <article class="blog-card" 
+			data-title="Este es el paos a paso para formar una empresa de forma legal"
+                    data-text="En este artículo explicamos detalladamente el proceso legal para constituir tu empresa en Colombia, desde la elección del tipo societario hasta el registro ante las entidades correspondientes."
+                    data-image="multimedia/blog/constitución.png">
+
+                    <img src="multimedia/blog/constitución.png" alt="Constitución de empresas">
+                    <h3>Tu empresa paso a paso</h3>
+                    <p>Guía práctica para constituir tu empresa sin errores legales.</p>
+                </article>
+
+
+                <article class="blog-card" 
+			data-title=""
+                    data-text="";
+                    data-image="">
+                    <img src="multimedia/blog/responsabilidadcivil.png" alt="Responsabilidad civil">
+                    <h3>Responsabilidad civil</h3>
+                    <p>Qué hacer ante daños, reclamaciones y demandas.</p>
+                </article>
+
+                <article class="blog-card" 
+		data-title=""
+                    data-text="";
+                    data-image="">
+                    <img src="multimedia/blog/contratoslaborales.png" alt="Contratos laborales">
+                    <h3>Contratos laborales</h3>
+                    <p>Cláusulas clave que debes revisar siempre.</p>
+                </article>
+
+                <article class="blog-card" 
+		data-title=""
+                    data-text="";
+                    data-image="">
+                    <img src="multimedia/blog/guialegal.png" alt="Guía legal para emprendedores">
+                    <h3>Guía para emprendedores</h3>
+                    <p>Aspectos legales básicos antes de iniciar tu negocio.</p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= WHATSAPP ================= -->
+    <a href="https://wa.me/573057082484" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- IZQUIERDA -->
+            <div class="footer-left">
+                <h4>Síguenos</h4>
+
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/1874hLphMZ/?mibextid=wwXIfr" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/living_group_asociados?igsh=czd4bnlwam8yMjk0"
+                        target="_blank">Instagram</a>
+                    <a href="blog.html">Acceso al Blog</a>
+                </div>
             </div>
 
-            <a href="blog.html" class="footer-blog">
-                Acceso al Blog
-            </a>
+            <!-- CENTRO -->
+            <div class="footer-center">
+                <h4>Nuestros Canales de Contacto</h4>
+
+                <img src="multimedia/logosinfondo.png" alt="Living Group Asociados" class="footer-logo">
+
+                <ul class="footer-contact">
+                    <li>📞 <strong>Gerente General:</strong> +57 305 7082484</li>
+                    <li>📞 <strong>Director Jurídico:</strong> +57 310 2305210</li>
+                    <li>📞 <strong>Director de Cobranzas:</strong> +57 310 3844204</li>
+
+                    <li>✉️ <strong>Gerencial:</strong> <a
+                            href="mailto:asociados.livinggroup@gmail.com">asociados.livinggroup@gmail.com</a></li>
+                    <li>✉️ <strong>Jurídico o Legal:</strong> <a
+                            href="mailto:consultoria.livinggroup@gmail.com">consultoria.livinggroup@gmail.com</a></li>
+                    <li>✉️ <strong>Contabilidad:</strong> <a
+                            href="mailto:finanzas.livinggroup@gmail.com">finanzas.livinggroup@gmail.com</a></li>
+                    <li>✉️ <strong>Asuntos Comerciales:</strong> <a
+                            href="mailto:comercial.livinggroup@gmail.com">comercial.livinggroup@gmail.com</a></li>
+
+                    <li>📍 Carrera 72 L No. 39 A 13 Piso 4 Bogotá, Colombia</li>
+                </ul>
+            </div>
+
+            <!-- DERECHA -->
+            <div class="footer-right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9036717335746!2d-74.1496057!3d4.6107285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ebfd3e8342d:0xdef55acac4cd6e9f!2sCra.%2072L%20%2339a-49%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1700000000000"
+                    width="100%" height="250" style="border:0;" allowfullscreen loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
         </div>
 
-        <!-- COLUMNA CENTRAL -->
-        <div class="footer-center">
-            <img src="multimedia/logosinfondo.png" alt="Living Group Asociados" class="footer-logo">
-
-            <ul class="footer-contact">
-                <li>📞 +57 300 000 0000</li>
-                <li>✉️ contacto@livinggroup.com</li>
-                <li>📍 Bogotá, Colombia</li>
-            </ul>
+        <div class="footer-bottom">
+            © 2026 Living Group Asociados · Todos los derechos reservados
         </div>
 
-        <!-- COLUMNA DERECHA -->
-        <div class="footer-right">
-            <iframe 
-                src="https://www.google.com/maps?q=Bogotá,Colombia&output=embed"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
+    </footer>
 
+    <!-- MODAL BLOG -->
+    <div class="blog-modal" id="blogModal">
+        <div class="blog-modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <h2 id="modalTitle"></h2>
+            <p id="modalText"></p>
+        </div>
     </div>
-
-    <div class="footer-bottom">
-        © 2026 Living Group Asociados · Todos los derechos reservados
-    </div>
-</footer>
-
-
-<script src="logica.js"></script>
+    <!-- JS -->
+    <script src="js/blog.js"></script>
 </body>
+
 </html>
