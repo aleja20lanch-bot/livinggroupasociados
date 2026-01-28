@@ -191,7 +191,7 @@ transition: right 0.3s ease;
 
     min-height: 80vh;
     background: linear-gradient(rgba(4, 18, 25, 0.7), rgba(4, 18, 25, 0.8)),
-        url('multimedia/PORTADA.png') center/cover;
+        url('multimedia/portada.png') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1489,3 +1489,4 @@ grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 .client-card.no-logo img {
     display: none;
 }
+
