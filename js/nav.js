@@ -35,3 +35,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+// Servicios
+
+const serviceCards = document.querySelectorAll('.service-card');
+
+serviceCards.forEach(card => {
+    card.addEventListener('click', () => {
+
+        // Solo en dispositivos sin hover (móvil)
+        if (window.matchMedia('(hover: none)').matches) {
+            card.classList.toggle('active');
+        }
+
+    });
+});
