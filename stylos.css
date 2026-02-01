@@ -1241,7 +1241,7 @@ body.modal-open {
 }
 
 .team-card p {
-    color: var(--teal-accent);
+    color: #ffffff;
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -1620,4 +1620,5 @@ body.modal-open {
     filter: grayscale(0%);
     transform: scale(1.05);
 }
+
 
